@@ -1,0 +1,27 @@
+.thumbnails{
+	@mixin clearfix;
+	margin-right: -15px;
+
+	img{
+		transition: all 0.2s ease-in-out;
+		float: left;
+		width: 25%;
+		box-sizing: border-box;
+		padding-right: 15px;
+		margin-bottom: 15px;
+	}
+	&:hover img {
+		opacity: 0.4;
+		transform: scale(0.92);
+	}
+	&:hover img:hover{
+		opacity: 1;
+		transform: scale(1) rotate(3deg);
+	}
+
+	@mixin atSmall{
+		& img{
+			width: 50%;
+		}
+	}
+}

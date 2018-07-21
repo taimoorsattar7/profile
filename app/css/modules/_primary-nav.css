@@ -1,0 +1,43 @@
+.primary-nav {
+  padding-top: 10px;
+
+  @mixin atMedium {
+    display: none;
+    padding-top: 0;
+  }
+
+  &--pull-right {
+    float: right;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    @mixin clearfix;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+  }
+  
+
+  li:last-child {
+    padding-right: 0;
+  }
+  li:hover {
+    border-bottom: 2px solid white;
+  }
+
+  a {
+    color: #FFF;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    
+    font-size: 0.9rem;
+    padding: 12px 0;
+  }
+}
